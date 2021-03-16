@@ -103,6 +103,8 @@ https://www.youtube.com/watch?v=3ni-jP2qEWg
 ---
 ## Referencias
 
+Crowe, C. T., Montgomery, D. C., Elger, D. F., Peck, E. A., Vining, G. G., & Roberson, J. A. (2002). Introducción al análisis de regresión lineal. Alianza Editorial.
+
 Generación Multidisciplinarias. (2020, 22 septiembre). DESCARGAR E INSTALAR R Y RSTUDIO   EN MAC fácil-2021 [Vídeo]. YouTube. https://www.youtube.com/watch?v=sR-0BthRivY
 
 Hensel Mora Ochoa. (2020, 22 enero). Cómo Descargar e Instalar R y RStudio [Vídeo].      YouTube. https://www.youtube.com/watch?v=D9Bp11iZssc

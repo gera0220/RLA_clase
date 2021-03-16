@@ -13,6 +13,7 @@ ggplot(data = datos)+
 modelo <- lm(formula = pureza ~ hidrocarburos, data = datos)
 anova(modelo)
 summary(modelo)
+confint(modelo, level = 0.95)
 
 # Gráfica de residuos ----
 par(mfrow = c(2,2))
