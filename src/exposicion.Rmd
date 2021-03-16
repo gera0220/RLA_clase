@@ -1,0 +1,118 @@
+---
+title: "¿Por Qué Usar R?"
+author: "Gerardo Pérez"
+date: "Marzo 2021"
+output: slidy_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+```{r, message=FALSE, echo=FALSE}
+library(tidyverse)
+library(knitr)
+```
+
+## ¿Por qué usar R?
+
+* Comunidad
+
+R es utilizado por los estadísticos profesionales y académicos, además de otros analistas de datos en diversas ramas.
+
+```{r, echo=FALSE, out.width="20%"}
+include_graphics(c("../figs/logo_slack.png", include_graphics("../figs/logo_stackoverflow.png")))
+```
+
+* Adaptabilidad
+
+Los usuarios puedes escribir paquetes que mejoren las capacidades de R. Hay miles de paquetes disponibles para manejar diversas tareas. Esta adaptabilidad permite que haya nuevas técnicas disponibles en R años antes de que estén disponibles en software propietario.
+
+---
+
+* Flexibilidad
+
+La modificación de procedimientos es más sencilla, a diferencia del software propietario donde el código se mantiene oculto y sólo se es capaz de modificar los parámetros ofrecidos.
+
+```{r, echo = TRUE, fig.height=4, fig.width=7, fig.align = "center"}
+ggplot(data = mpg)+
+  geom_point(mapping = aes(x = displ, y = hwy))
+```
+
+
+---
+
+Con un parámetro más (color = class) se podrá obtener un poco más de información de la visualización.
+
+```{r, echo = TRUE, fig.height=4.8, fig.width= 8, fig.align = "center"}
+ggplot(data = mpg)+
+  geom_point(mapping = aes(x = displ, y = hwy, color = class))
+```
+
+---
+
+* Rendimiento
+
+R es rápido y se puede trabajar con grandes conjuntos de datos. Aunque no es el lenguaje más rápido disponible, suele ser más que suficiente para casi todo propósito.
+
+---
+
+* Fácil integración de simulación y análisis
+
+Al realizar hipótesis en un análisis estadístico es común cuestionarse "¿qué pasaría si...?" y responder estas preguntas en R es muy sencillo.
+
+```{r}
+head(cars, n = 10)
+```
+---
+
+```{r, echo = TRUE, fig.height=4.8, fig.width=7, fig.align = "center"}
+ggplot(data = cars, mapping = aes(x = speed, y = dist))+
+  geom_point()
+```
+
+---
+```{r, echo = TRUE, message=FALSE, fig.height=4.6, fig.width=7, fig.align = "center"}
+ggplot(data = cars, mapping = aes(x = speed, y = dist))+
+  geom_point()+
+  geom_smooth(method = 'lm')
+```
+
+---
+
+* Precio
+
+R es un software libre bajo GNU. La ventaja más clara es que será gratuito, además de que por ser gratuito la comunidad será más amplia.
+
+---
+
+## Instalación
+
+### Windows
+
+https://www.youtube.com/watch?v=D9Bp11iZssc
+
+### Mac OS
+
+https://www.youtube.com/watch?v=sR-0BthRivY
+
+### Linux
+
+https://www.youtube.com/watch?v=3ni-jP2qEWg
+
+---
+## Referencias
+
+Generación Multidisciplinarias. (2020, 22 septiembre). DESCARGAR E INSTALAR R Y RSTUDIO   EN MAC fácil-2021 [Vídeo]. YouTube. https://www.youtube.com/watch?v=sR-0BthRivY
+
+Hensel Mora Ochoa. (2020, 22 enero). Cómo Descargar e Instalar R y RStudio [Vídeo].      YouTube. https://www.youtube.com/watch?v=D9Bp11iZssc
+
+Oxford Academic (2019). 6 reasons why you should use R. Medium. URL
+  https://medium.com/science-uncovered/6-reasons-why-you-should-use-r-38643ec98d0a
+  
+R Core Team (2021). R: A language and environment for statistical computing. R
+  Foundation for Statistical Computing, Vienna, Austria. URL
+  https://www.R-project.org/.
+  
+Renzo Caceres Rossi. (2020, 6 mayo). Instalando R & RStudio en Ubuntu 18.04 | Paso a     Paso [Vídeo]. YouTube. https://www.youtube.com/watch?v=3ni-jP2qEWg
+  
